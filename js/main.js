@@ -14,6 +14,8 @@ var chkBackground = 0;
 var fileClassBoolean = 0;
 /**************************** 변수 선언 ****************************/
 
+
+
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
