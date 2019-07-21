@@ -280,11 +280,13 @@ function alertHelp() {
 			alertHelpString +=    "B열 : 표시 값"+"<br>";
 			alertHelpString +=    "C열 : Category2"+"<br>";
 			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택"+"<br>";
+			alertHelpString +=    "<br>";
 			alertHelpString +=    "-----GPS Excel-----"+"<br>";
 			alertHelpString +=    "A열 : No."+"<br>";
 			alertHelpString +=    "B열 : 위도"+"<br>";
 			alertHelpString +=    "C열 : 경도"+"<br>";
 			alertHelpString +=    "ex) : A열 : 0, B열 : 37.290208, C열 : 127.011734"+"<br>";
+			alertHelpString +=    "<br>";
 			alertHelpString +=    "-----추가 기능-----"+"<br>";
 			alertHelpString +=    "지도 클릭시 위도,경도 자동 복사"+"<br>";
 			alertHelpString +=    "내 위치 및 오차 반경 표시"+"<br>";
