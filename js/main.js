@@ -372,7 +372,7 @@ function success(pos) {
 
 	mylocationMark = new kakao.maps.Marker({
 	    position: new kakao.maps.LatLng(crd.latitude, crd.longitude)
-	)};
+	});
 
 	mylocationMark.setMap(map);
   // 지도에 원을 표시합니다
