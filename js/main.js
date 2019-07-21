@@ -275,7 +275,23 @@ function alertNotFound() {
 
 //설명서 표시하는 함수
 function alertHelp() {
-	var alertHelpString =     "-----사용 방법 추가 예정-----"+"<br>";
+	var alertHelpString =     "-----Address Excel-----"+"<br>";
+			alertHelpString +=    "A열 : 검색 할 주소"+"<br>";
+			alertHelpString +=    "B열 : 표시 값"+"<br>";
+			alertHelpString +=    "C열 : Category2"+"<br>";
+			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택;"+"<br>";
+			alertHelpString +=    "<span style="color:green;">일반주택, 상가주택<br></span>";
+			alertHelpString +=    "<span style="color:gold;">농사용<br></span>";
+			alertHelpString +=    "<span style="color:purple;">휴게음식점, 일반음식점<br></span>";
+			alertHelpString +=    "<span style="color:red;">노래연습장업, 기타주점, 유흥주점, 단란주점<br></span>";
+			alertHelpString +=    "<span style="color:blue;">이동통신 중계기<br></span>";
+			alertHelpString +=    "<span style="color:brown;">광업, 하수폐기청소업, 제조업<br></span>";
+			alertHelpString +=    "-----GPS Excel-----"+"<br>";
+			alertHelpString +=    "A열 : No."+"<br>";
+			alertHelpString +=    "B열 : 위도"+"<br>";
+			alertHelpString +=    "C열 : 경도"+"<br>";
+			alertHelpString +=    "ex) : A열 : 0, B열 : 37.290208, C열 : 127.011734;"+"<br>";
+			alertHelpString +=    "-----추가 기능-----";
 			alertHelpString +=    "지도 클릭시 위도,경도 자동 복사";
 	document.getElementById("alertTitle").innerHTML = "사용 설명서";
 	document.getElementById("alertContent").innerHTML = alertHelpString;
