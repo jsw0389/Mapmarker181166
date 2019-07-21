@@ -276,10 +276,10 @@ function alertNotFound() {
 //설명서 표시하는 함수
 function alertHelp() {
 	var alertHelpString =     "-----Address Excel-----"+"<br>";
-			alertHelpString +=    "A열 : 검색 할 주소"+"<br>";
+			alertHelpString +=    "A열 : 검색 주소 값"+"<br>";
 			alertHelpString +=    "B열 : 표시 값"+"<br>";
 			alertHelpString +=    "C열 : Category2"+"<br>";
-			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택;"+"<br>";
+			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택"+"<br>";
 			alertHelpString +=    "-----GPS Excel-----"+"<br>";
 			alertHelpString +=    "A열 : No."+"<br>";
 			alertHelpString +=    "B열 : 위도"+"<br>";
