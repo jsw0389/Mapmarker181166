@@ -12,6 +12,7 @@ var geocoder = new daum.maps.services.Geocoder();
 var bounds = new daum.maps.LatLngBounds();
 var chkBackground = 0;
 var fileClassBoolean = 0;
+var mylocationCircle = 0;
 /**************************** 변수 선언 ****************************/
 
 var mapContainer = document.getElementById('map'),
@@ -346,7 +347,12 @@ function success(pos) {
   console.log('Longitude: ' + crd.longitude);
   console.log('More or less ' + crd.accuracy + ' meters.');
 
-  var circle = new kakao.maps.Circle({
+  if(mylocationCircle) {
+    mylocationCircle.setMap(null);
+    mylocationCircle = null;
+  }
+
+  mylocationCircle = new kakao.maps.Circle({
       center : new kakao.maps.LatLng(crd.latitude, crd.longitude),  // 원의 중심좌표 입니다
       radius: crd.accuracy, // 미터 단위의 원의 반지름입니다
       strokeWeight: 3, // 선의 두께입니다
@@ -358,7 +364,7 @@ function success(pos) {
   });
 
   // 지도에 원을 표시합니다
-  circle.setMap(map);
+  mylocationCircle.setMap(map);
 
   var moveLatLon = new kakao.maps.LatLng(crd.latitude, crd.longitude);
 
