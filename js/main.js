@@ -280,12 +280,6 @@ function alertHelp() {
 			alertHelpString +=    "B열 : 표시 값"+"<br>";
 			alertHelpString +=    "C열 : Category2"+"<br>";
 			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택;"+"<br>";
-			alertHelpString +=    "<span style="color:green;">"+"일반주택, 상가주택"+"<br>"+"</span>";
-			alertHelpString +=    "<span style="color:gold;">농사용<br></span>";
-			alertHelpString +=    "<span style="color:purple;">휴게음식점, 일반음식점<br></span>";
-			alertHelpString +=    "<span style="color:red;">노래연습장업, 기타주점, 유흥주점, 단란주점<br></span>";
-			alertHelpString +=    "<span style="color:blue;">이동통신 중계기<br></span>";
-			alertHelpString +=    "<span style="color:brown;">광업, 하수폐기청소업, 제조업<br></span>";
 			alertHelpString +=    "-----GPS Excel-----"+"<br>";
 			alertHelpString +=    "A열 : No."+"<br>";
 			alertHelpString +=    "B열 : 위도"+"<br>";
