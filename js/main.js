@@ -280,7 +280,7 @@ function alertHelp() {
 			alertHelpString +=    "B열 : 표시 값"+"<br>";
 			alertHelpString +=    "C열 : Category2"+"<br>";
 			alertHelpString +=    "ex) : A열 : 영화동 338-1, B열 : 338-1, C열 : 일반주택;"+"<br>";
-			alertHelpString +=    "<span style="color:green;">일반주택, 상가주택<br></span>";
+			alertHelpString +=    "<span style="color:green;">일반주택, 상가주택</span>"+"<br>";
 			alertHelpString +=    "<span style="color:gold;">농사용<br></span>";
 			alertHelpString +=    "<span style="color:purple;">휴게음식점, 일반음식점<br></span>";
 			alertHelpString +=    "<span style="color:red;">노래연습장업, 기타주점, 유흥주점, 단란주점<br></span>";
