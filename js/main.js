@@ -345,6 +345,26 @@ function success(pos) {
   console.log('Latitude : ' + crd.latitude);
   console.log('Longitude: ' + crd.longitude);
   console.log('More or less ' + crd.accuracy + ' meters.');
+
+  var circle = new kakao.maps.Circle({
+      center : new kakao.maps.LatLng(crd.latitude, crd.longitude),  // 원의 중심좌표 입니다
+      radius: crd.accuracy, // 미터 단위의 원의 반지름입니다
+      strokeWeight: 5, // 선의 두께입니다
+      strokeColor: '#75B8FA', // 선의 색깔입니다
+      strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+      strokeStyle: 'dashed', // 선의 스타일 입니다
+      fillColor: '#CFE7FF', // 채우기 색깔입니다
+      fillOpacity: 0.7  // 채우기 불투명도 입니다
+  });
+
+  // 지도에 원을 표시합니다
+  circle.setMap(map);
+
+  var moveLatLon = new kakao.maps.LatLng(crd.latitude, crd.longitude);
+
+  // 지도 중심을 부드럽게 이동시킵니다
+  // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+  map.panTo(moveLatLon);
 }
 
 function error(err) {
@@ -357,7 +377,6 @@ function mylocationMark() {
     timeout: 5000,
     maximumAge: 0
   };
-
   navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
