@@ -286,7 +286,8 @@ function alertHelp() {
 			alertHelpString +=    "C열 : 경도"+"<br>";
 			alertHelpString +=    "ex) : A열 : 0, B열 : 37.290208, C열 : 127.011734"+"<br>";
 			alertHelpString +=    "-----추가 기능-----"+"<br>";
-			alertHelpString +=    "지도 클릭시 위도,경도 자동 복사";
+			alertHelpString +=    "지도 클릭시 위도,경도 자동 복사"+"<br>";
+			alertHelpString +=    "내 위치 및 오차 반경 표시"+"<br>";
 	document.getElementById("alertTitle").innerHTML = "사용 설명서";
 	document.getElementById("alertContent").innerHTML = alertHelpString;
 	goDetail()
